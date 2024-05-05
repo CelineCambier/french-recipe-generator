@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI French recipe Generator</title>
   </head>
@@ -11,7 +12,7 @@
       <header><h1>AI French recipe Generator</h1></header>
 
       <main>
-        <form>
+        <form id="recipe-generetor-form">
           <input
             type="text"
             placeholder="Enter the main ingredient of your recipe"
@@ -20,9 +21,9 @@
             autocomplete="off"
             class="instructions"
           />
-          <input type="submit" class="submit-button"/>
+          <input type="submit" class="submit-button" />
         </form>
-        <div class="recipe">Here will be the french recipe</div>
+        <div class="recipe" id="recipe"></div>
       </main>
 
       <footer>

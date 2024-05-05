@@ -7,39 +7,42 @@
     <title>AI French recipe Generator</title>
   </head>
   <body>
-    <header><h1>AI French recipe Generator</h1></header>
+    <div class="container">
+      <header><h1>AI French recipe Generator</h1></header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the main ingredient of your recipe"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>Here will be the french recipe</div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the main ingredient of your recipe"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button"/>
+        </form>
+        <div class="recipe">Here will be the french recipe</div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/CelineCambier" target="_blank">
-        Celine Cambier</a
-      >
-      and is
-      <a
-        href="https://github.com/CelineCambier/french-recipe-generator.git"
-        target="_blank"
-      >
-        open-sourced on GitHub</a
-      >
-      and is hosted on
-      <a href="https://french-recipe-generator.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/CelineCambier" target="_blank">
+          Celine Cambier</a
+        >
+        and is
+        <a
+          href="https://github.com/CelineCambier/french-recipe-generator.git"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and is hosted on
+        <a href="https://french-recipe-generator.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>

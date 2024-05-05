@@ -4,7 +4,7 @@ body {
 }
 
 a {
-    color: #23573a;
+  color: #23573a;
 }
 
 .container {
@@ -24,13 +24,23 @@ h1 {
   color: #0f2418;
 }
 
-form {
-  padding: 30px;
+.form-container {
+  padding: 15px 20px;
   background-color: #e5e9e7;
   box-shadow: 0px 20px 60px rgba(199, 235, 215, 0.08);
   border-radius: 10px;
-  display: flex;
   margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
 }
 
 .instructions {
@@ -55,18 +65,38 @@ form {
 }
 
 .recipe {
-    font-size: 16px;
-    background-color: #e5e9e7;
-    padding: 20px;
-    line-height: 2;
-    font-weight: 24px;
-    border: 3px solid #23573a;;
-    box-shadow: 0px 20px 60px rgba(199, 235, 215, 0.08);
-    border-radius: 20px;
+  font-size: 16px;
+  background-color: #e5e9e7;
+  padding: 20px;
+  line-height: 2;
+  font-weight: 24px;
+  border: 3px solid #23573a;
+  box-shadow: 0px 20px 60px rgba(199, 235, 215, 0.08);
+  border-radius: 20px;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
-    text-align: center;
-    font-size: 13px;
-    margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

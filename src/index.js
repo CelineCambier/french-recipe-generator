@@ -18,6 +18,10 @@ function generateRecipe(event) {
     "You are a very smart AI and love helping poeple. Your mission is to generate an easy French recipe written in English. Please write the recipe in basic HTML. Make sure to follow the user instructions.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `<div class="generating">⏳ Generating a French recipe with ${instructionsInput.value}</div>`;
+
   console.log("Generating recipe");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);

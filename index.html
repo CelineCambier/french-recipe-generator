@@ -13,19 +13,22 @@
       <header><h1>AI French recipe Generator</h1></header>
 
       <main>
-        <form id="recipe-generetor-form">
-          <input
-            type="text"
-            placeholder="Enter the main ingredient of your recipe"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="recipe" id="recipe"></div>
+        <div class="form-container">
+          <form id="recipe-generetor-form">
+            <input
+              type="text"
+              placeholder="Enter the main ingredient of your recipe"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Beef, carrot or cheese</div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
 
       <footer>
